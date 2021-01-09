@@ -4,7 +4,6 @@ import images from "./gallery-items.js";
 // console.log(images);
 
 const galleryRef = document.querySelector(".gallery, .js-gallery");
-const galleryImage = galleryRef.querySelectorAll(".gallery__image");
 const lightBoxRef = document.querySelector(".lightbox");
 const lightBoxImage = document.querySelector(".lightbox__image");
 const lightBoxButton = document.querySelector(".lightbox__button");
