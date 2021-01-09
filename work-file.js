@@ -4,18 +4,16 @@ import images from "./gallery-items.js";
 // console.log(images);
 
 const galleryRef = document.querySelector(".gallery, .js-gallery");
-console.log(galleryRef);
+// console.log(galleryRef);
 const imagesArray = [];
 images.forEach((image) => {
   const itemRef = document.createElement("li");
-  itemRef.classList.add("picture");
+  itemRef.classList.add("item");
   //   console.log(itemRef);
 
   itemRef.insertAdjacentHTML(
     "beforeend",
-    `<img
-      src='${image.url}' alt='${image.alt}'
-    ></img>`
+    `<img class='gallery__image' src='${image.original}' alt='${image.description}'></img>`
   );
   imagesArray.push(itemRef);
 });
